@@ -137,35 +137,34 @@
       </div>
     </section>
 
-    <section class="testimony container">
-      <h2 class="subtitle">Que dicen sobre mí?</h2>
-      <div class="testimony__grid">
-        <article class="testimony__item">
-          <div class="testimony__person">
-            <img src="assets/man.jpg" alt="" class="testimony__img">
-            <div class="testimony__texts">
-              <h3 class="testimony__name">Jose Amaya</h3>
-              <p class="testimony__verification">CEO de ITfuture</p>
-            </div>
-          </div>
-          <p class="testimony__review">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, pariatur
-            dignissimos! Ex eos similique eius debitis voluptate quam aspernatur sit ad rerum nam dolorum suscipit
-            fugiat, iste obcaecati quisquam repellendus!</p>
-        </article>
-        <article class="testimony__item">
-          <div class="testimony__person">
-            <img src="assets/man.jpg" alt="" class="testimony__img">
-            <div class="testimony__texts">
-              <h3 class="testimony__name">Jose Amaya</h3>
-              <p class="testimony__verification">CEO de ITfuture</p>
-            </div>
-          </div>
-          <p class="testimony__review">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, pariatur
-            dignissimos! Ex eos similique eius debitis voluptate quam aspernatur sit ad rerum nam dolorum suscipit
-            fugiat, iste obcaecati quisquam repellendus!</p>
-        </article>
-      </div>
+    <section class="section-form">
+      <div id="form-main">
+        <div id="form-div">
+          <form action="https://formspree.io/f/xoqyyqnn" method="POST" class="form" id="form1">
 
+            <p class="name">
+              <input name="name" type="text" autocomplete="off"
+                class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name"
+                id="name" />
+            </p>
+
+            <p class="email">
+              <input name="email" type="text" autocomplete="off" class="validate[required,custom[email]] feedback-input"
+                id="email" placeholder="Email" />
+            </p>
+
+            <p class="text">
+              <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment"
+                placeholder="Comment"></textarea>
+            </p>
+
+
+            <div class="submit">
+              <input type="submit" value="ENVIAR" id="button-blue" />
+              <div class="ease"></div>
+            </div>
+          </form>
+        </div>
     </section>
 
   </main>
@@ -191,8 +190,31 @@
 
     </div>
   </footer>
+  <script>
+    const $form = document.querySelector('#form1');
 
+    $form.addEventListener('submit', handleSubmit)
+
+    async function handleSubmit(e) {
+      e.preventDefault()
+      const form = new FormData(this)
+      const response = await fetch(this.action, {
+        method: this.method,
+        body: form,
+        headers: {
+          'Accept': 'application/json'
+        }
+      })
+      if (response.ok) {
+        $form.reset()
+        alert('Gracias por contactarme,te escribiré pronto')
+      }
+    }
+
+
+  </script>
 
 </body>
+<script src="https://kit.fontawesome.com/3fe207f931.js" crossorigin="anonymous"></script>
 
 </html>
