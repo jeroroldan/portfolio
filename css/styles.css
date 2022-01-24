@@ -129,14 +129,14 @@ body{
            text-align: center;
 }
 
-.presentation__picture{
+/* .presentation__picture{
            width:300px;
            height: auto;
            border-radius: 5%;
            margin-bottom: 10px;
            object-fit:cover;
            object-position:center;
-}
+} */
 
 .presentation__copy{
            width: 80%;
