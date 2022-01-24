@@ -8,27 +8,29 @@
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/styles.scss">
-  <title>Portafolio Jeronimo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <title>Portfolio Jeronimo</title>
 </head>
 
 <body>
   <header class="hero">
     <div class="container">
       <nav class="nav">
-        <a href="#" class="nav__items nav__items--cta">Contactame</a>
-        <a href="#habilidades" class="nav__items">Mis habilidades</a>
-        <a href="#proyectos" class="nav__items">Proyectos</a>
+        <a href="#" class="nav__items nav__items--cta">Contact me</a>
+        <a href="#habilidades" class="nav__items">My abilities</a>
+        <a href="#proyectos" class="nav__items">Proyects</a>
       </nav>
       <section class="hero__container">
         <div class="hero__texts">
           <h1 class="hero__title">
-            Hola soy Jerónimo Roldán [Software Developer]
-          </h1>
+            Hi,my name is Jerónimo Roldán
+          </h1><br>
+          <h3>[Software Developer]</h3>
           <div class="hero__img">
-            <img src="assets/foto_portfolio3.jpg" alt="" class="presentation__picture">
           </div>
           <h2 class="hero__subtitle">
-            Tranformando ideas a realidades
+            Transforming ideas to realities.
           </h2>
         </div>
       </section>
@@ -42,60 +44,81 @@
   </header>
 
   <main>
+
     <section class="presentation container">
+      <img src="assets/foto_portfolio3.jpg" alt="imagen" class="presentation__picture">
+
 
     </section>
+
 
     </section>
     <section class="container" id="habilidades">
       <div class="skill-bars">
         <div class="about__texts">
-          <h2 class="subtitle">Mis habilidades</h2>
-
+          <h2 class="subtitle">My abilities</h2>
+          <div class="row">
+            <div class="col-md-3 card-wrap">
+              <div class="card-header one">
+                <i class="fas fa-code"></i>
+              </div>
+              <div class="col-md-3 card-content">
+                <h1 class="card-title">Title</h1>
+                <p class="card-text">Implementation of design patterns, object-oriented programming and data structures
+                  based on efficient algorithms.</p>
+                <button class="card-btn one">code</button>
+              </div>
+            </div>
+            <div class="col-md-3 card-wrap">
+              <div class="card-header two">
+                <i class="fab fa-css3-alt"></i>
+              </div>
+              <div class="col-md-3 card-content">
+                <h1 class="card-title">Title</h1>
+                <p class="card-text">Styles, animation, visualization of elements with different sizes and colors.</p>
+                <button class="card-btn two">css3</button>
+              </div>
+            </div>
+            <div class="col-md-3 card-wrap">
+              <div class="card-header three">
+                <i class="fab fa-html5"></i>
+              </div>
+              <div class="col-md-3 card-content">
+                <h1 class="card-title">Title</h1>
+                <p class="card-text">Layout with syntactic order in each tag and use of rules for better SEO</p>
+                <button class="card-btn three">html5</button>
+              </div>
+            </div>
+            <div class="col-md-3 card-wrap">
+              <div class="card-header four">
+                <i class="fab fa-js-square"></i>
+              </div>
+              <div class="col-md-3 card-content">
+                <h1 class="card-title">Title</h1>
+                <p class="card-text">Clean code, accompanied by good practices and knowledge in the two most demanded
+                  libraries in the market, Angular and
+                  ReactJs.</p>
+                <button class="card-btn four">js</button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="bar ">
-          <div class="info">
-            <span>HTML</span>
-          </div>
-          <div class="progress-line html">
-            <span></span>
-          </div>
+        <div class="progress-line css">
+          <span></span>
         </div>
-        <div class="bar">
-          <div class="info">
-            <span>ReactJs</span>
-          </div>
-          <div class="progress-line react">
-            <span></span>
-          </div>
-          <div class="bar">
-            <div class="info">
-              <span>Angular+9</span>
-            </div>
-            <div class="progress-line angular">
-              <span></span>
-            </div>
-          </div>
-          <div class="bar">
-            <div class="info">
-              <span>CSS</span>
-            </div>
-            <div class="progress-line css">
-              <span></span>
-            </div>
-          </div>
-        </div>
+      </div>
+      </div>
     </section>
-    <section class="projects" id="proyectos">
+    <section class="projects mt-5" id="proyectos">
       <div class="container">
-        <h2 class="subtitle">Mis proyectos</h2>
+        <h2 class="subtitle">My projects</h2>
         <div class="projects__grid">
 
           <a href="https://competent-murdock-4fff96.netlify.app/">
             <article class="projects__item">
               <img src="assets/img1.jpg" class="projects__img" alt="">
               <div class="projects__hover">
-                <h2 class="projects__title">Proyecto</h2>
+                <h2 class="projects__title">Project</h2>
                 <i class="far fa-file-alt proyects__icon"></i>
               </div>
             </article>
@@ -104,7 +127,7 @@
           <article class="projects__item">
             <img src="assets/img2.jpg" class="projects__img" alt="">
             <div class="projects__hover">
-              <h2 class="projects__title">Proyecto</h2>
+              <h2 class="projects__title">Project</h2>
               <i class="far fa-file-alt proyects__icon"></i>
             </div>
           </article>
@@ -112,7 +135,7 @@
             <article class="projects__item" id="proyectos">
               <img src="assets/img3.jpg" class="projects__img" alt="">
               <div class="projects__hover">
-                <h2 class="projects__title">Proyecto</h2>
+                <h2 class="projects__title">Project</h2>
                 <i class="far fa-file-alt proyects__icon"></i>
               </div>
             </article>
@@ -121,7 +144,7 @@
           <article class="projects__item">
             <img src="assets/img4.jpg" class="projects__img" alt="">
             <div class="projects__hover">
-              <h2 class="proyects__title">Proyecto</h2>
+              <h2 class="proyects__title">Project</h2>
               <i class="far fa-file-alt proyects__icon"></i>
             </div>
           </article>
@@ -129,7 +152,7 @@
           <article class="projects__item">
             <img src="assets/img5.jpg" class="projects__img" alt="">
             <div class="projects__hover">
-              <h2 class="proyects__title">Proyecto</h2>
+              <h2 class="proyects__title">Project</h2>
               <i class="far fa-file-alt proyects__icon"></i>
             </div>
           </article>
@@ -170,15 +193,15 @@
   </main>
 
   <footer class="footer">
-    <div class="container footer__grid">
+    <div class="web__container  footer__grid">
       <nav class="nav nav--footer">
         <a class="nav__items nav__items--footer" href="/">Inicio</a>
-        <a class="nav__items nav__items--footer" href="#habilidades">Mis habilidades</a>
-        <a class="nav__items nav__items--footer" href="#proyectos">Proyectos</a>
+        <a class="nav__items nav__items--footer" href="#habilidades">My abilities</a>
+        <a class="nav__items nav__items--footer" href="#proyectos">Projects</a>
 
       </nav>
       <section class="footer__contact">
-        <h3 class="footer__title">Contactame</h3>
+        <h3 class="footer__title">Contact me</h3>
         <div class="footer__icons">
 
           <span class="footer__container-icons">
